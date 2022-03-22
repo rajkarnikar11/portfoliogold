@@ -1,0 +1,26 @@
+.work-container{
+    height: 100Vh;
+    padding: 10px;
+    margin-top: 7vh;
+    width: 75vw;
+    
+}
+.work-title{
+    color: #101820FF;
+    font-family: "Noto Sans Display";
+    font-size: 7vw;
+    line-height: 2vw;
+    -webkit-text-stroke: .3px #D4B44A;
+    text-align: left;
+    margin-left: 2vw;
+    opacity: 0;
+}
+
+
+.carousel-container{
+    display: flex;
+    justify-content: space-around;
+    
+    margin-top: 2vh;
+    
+}

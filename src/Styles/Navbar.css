@@ -1,0 +1,48 @@
+.nav-container{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    right:2%;
+    transform: translateY(-50%);
+}
+.items{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(19, 19, 19,0);
+    font-size: 3vw;
+    text-align: right;
+    line-height: 4vw;
+    margin: 5px 0px 5px 0;
+    font-family: "Noto Sans Display";
+    font-weight: 700;
+    -webkit-text-stroke: 1px #D4B44A;
+    text-transform: uppercase;
+}
+.items:hover{
+    color: #D4B44A;
+    transition-duration: .3s;
+    font-family: "Stick No Bills";
+    transition-timing-function: linear;
+    font-size: 4vw;
+    line-height: 4vw;
+    
+}
+.active-items{
+    list-style: none;
+    text-decoration: none;
+    color: #D4B44A;
+    font-size: 5vw;
+    text-align: right;
+    margin: 5px 0px 5px 0;
+    font-family: "Stick No Bills";
+    font-weight: 900;
+    line-height: 4vw;
+    
+    
+    
+    
+    text-transform: uppercase;
+   
+   
+}

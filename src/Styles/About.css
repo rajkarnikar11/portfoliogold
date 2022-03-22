@@ -1,0 +1,120 @@
+.pro{
+    object-fit: cover;
+    height: 60vh;
+    left: 0%;
+    opacity: 0;
+    position: absolute;
+    top:0;
+    z-index: -1;
+    
+}
+.pro-container{
+    margin-top: 2vh;
+    width: 30vw;
+    
+    
+}
+.linear-gradient{
+    position: absolute;
+    z-index:0 ;
+    background-image:linear-gradient(to top ,#101820FF,#101820FF,rgb(16, 24, 32,.5),rgb(16, 24, 32,0),rgb(16, 24, 32,0),rgb(16, 24, 32,0) ) ;
+    height: 60vh;
+    margin-top: 2vh;
+    width: 30vw;
+    
+}
+.about-text{
+    position: absolute;
+    /* border-right: 20px solid #131313;
+    border-bottom: 20px solid #131313;
+    box-shadow: rgb(212, 180, 74,.7) .5vw .5vw; */
+    color: #101820FF;
+    font-size: 2.2vw;
+    display: inline;
+    text-align: right;
+    right:0;
+    top: 25vh;
+    background-color: #D4B44A;
+    line-height: 5vw;
+    font-family: 'Ubuntu Mono', monospace;
+    opacity: 0;
+}
+.Typewriter{
+    color: aliceblue;
+}
+.about-text1{
+    position: absolute;
+    opacity: 0;
+    color: #101820FF;
+    font-size: 2vw;
+    display: inline;
+    text-align: right;
+    right:0;
+    top: 42vh;
+    background-color: #D4B44A;
+    line-height: 5vw;
+    font-family: 'Ubuntu Mono', monospace;
+    
+
+    
+}
+.about-text2{
+    position: absolute;
+    opacity: 0;
+    color: #101820FF;
+    font-size: 2.2vw;
+    
+    text-align: right;
+    right:0;
+    top: 58vh;
+    background-color: #D4B44A;
+    line-height: 5vw;
+    font-family: 'Ubuntu Mono', monospace;
+    
+}
+.about-text-container{
+    
+    height: 80vh;
+   
+    padding: 0 1vw;
+    font-size: 5vw;
+}
+.about-title{
+    color: #101820FF;
+    font-family: "Noto Sans Display";
+    font-size: 7vw;
+    line-height: 2vw;
+    -webkit-text-stroke: .3px #D4B44A;
+    text-align: left;
+    margin-left: 2vw;
+    opacity: 0;
+   
+  
+    
+
+}
+.about-title:hover{
+
+}
+.about-container{
+    height: 100Vh;
+    padding: 10px;
+    
+}
+.about-name{
+    position: absolute;
+    color: #101820FF;
+    font-family: "Noto Sans Display";
+    font-size: 6.9vw;
+    line-height: 5vw;
+    -webkit-text-stroke: .3px #D4B44A;
+    text-align: left;
+    z-index: -3;
+    opacity: 0;
+}
+.about-body{
+    
+    width: 70vw;
+    margin: 2vw;
+    position: relative;
+}

@@ -1,0 +1,23 @@
+.carousel{
+    width: 23vw;
+   
+   
+}
+.card-container{
+    
+    height: 60vh;
+    /* margin: 5px;
+    padding: 5px; */
+    background-color: red;
+    
+    
+}
+.container-card{
+    margin:10px 0px ;
+    background-color:  #3f3f3a ;
+    height: 60vh;
+    border-radius: 30px;
+    
+    
+    
+}

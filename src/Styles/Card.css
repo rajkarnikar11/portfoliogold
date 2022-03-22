@@ -1,0 +1,62 @@
+.card-continer{
+    text-decoration: none;
+    height: 100%;
+    position: relative;
+    color: aliceblue; 
+}
+.hover-element{
+    position: absolute;
+    height: 60vh;
+    background-color: rgba(26, 26, 26, 0.7);
+    opacity: 0;
+    width: 23vw;
+    z-index: 5;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "montserrat";
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: import Instafill from "../assets/instafill.svg";
+    transition-duration: .3s;
+    transition-timing-function: linear;
+}
+.hover-element:hover{
+    opacity: 1;
+}
+.card-title{
+    /* background-color: black;   */
+    height: 10%;
+    font-size: 1.5vw;
+    text-align: center;
+    line-height: 1.5vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: "montserrat";
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #101820FF;
+    font-weight: 600;
+}
+
+.card-image-container{
+    height: 90%;
+    
+
+}
+.card-image{
+   object-fit: cover;
+   height: 100%;
+   border-radius: 0 0 30px 30px;
+   width: 100%;
+  
+   
+   
+}
