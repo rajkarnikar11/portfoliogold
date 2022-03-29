@@ -27,7 +27,7 @@ const About = () => {
 
   const { ref, inView, entry } = useInView({
     /* Optional options */
-    threshold: .7,
+    threshold: .3,
   });
   useEffect(() => {
     if(inView)  {navigate('/#about')};
@@ -66,9 +66,8 @@ const About = () => {
             <p ref={text1} className='about-text'>
               I am Salil Rajkarnikar 
             </p>
-             <p ref={text2} className='about-text1'> I studied Computer Engineering at Kathmandu Engineering College</p>
-             <p ref={text3} className='about-text2'> I am a FrontEnd developer with keen eye for modern Aesthetics
-            </p>
+             <p ref={text2} className='about-text1'>A FrontEnd developer with keen eye for modern Aesthetics</p>
+             <p ref={text3} className='about-text2'>Pursuing Computer Engineering from Kathmandu Engineering College</p>
           </div>
 
       </div>

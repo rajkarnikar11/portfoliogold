@@ -15,9 +15,12 @@ function App() {
         <Navbar/>
         <Intro/>
         <About/>
-        <Work/>
-        <Skills/>
-        <Contact/>
+        <div>
+          <h1 className='name'><span className='firstname'>salil</span>     <span className='lastname'>rajkarnikar</span> </h1>
+          <Work/>
+          <Skills/>
+          <Contact/>
+        </div>
 
       </div>
     </BrowserRouter>

@@ -1,23 +1,23 @@
 .carousel{
-    width: 23vw;
+    width: 75vw;
+    margin-left: 2vw;
+   
+  
    
    
 }
-.card-container{
-    
-    height: 60vh;
-    /* margin: 5px;
-    padding: 5px; */
-    background-color: red;
-    
-    
+
+.slider-containers{
+ 
 }
 .container-card{
     margin:10px 0px ;
-    background-color:  #3f3f3a ;
-    height: 60vh;
-    border-radius: 30px;
-    
-    
-    
+    background-color:  rgb(212, 180, 74,.6) ;
+    height: 40vh;
+    float: left;
+   
+    width: 23vw !important;
+    position: relative;
+   
+       
 }

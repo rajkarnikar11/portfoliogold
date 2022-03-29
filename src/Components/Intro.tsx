@@ -8,6 +8,9 @@ import Instastroke from "../assets/instastroke.svg"
 import Instafill from "../assets/instafill.svg"
 import Instroke from "../assets/instroke.svg"
 import Infill from "../assets/infill.svg"
+import Linkedinqr from "../assets/linkedinqr.png"
+import Instaqr from "../assets/instaqr.png"
+import Fbqr from "../assets/fbqr.png"
 // IoMdDownload
 import { MdGetApp } from "react-icons/md";
 import '../Styles/Intro.css'
@@ -47,15 +50,15 @@ const Intro = () => {
         gsap.fromTo(header.current,{opacity:0},{opacity:1,delay:8,duration:1})
         
         //for bulktext section
-        tl.fromTo(iam.current, {y:-1000,rotation: 0}, {duration: 1,y:0,rotation: 0,delay:.2});
+        tl.fromTo(iam.current, {y:-1000,rotation: 0 ,opacity: 0}, {duration: 1,y:0,rotation: 0,opacity:1,delay:.2});
         tl.to(iam.current, {duration: .5,y:0,rotation: -90,delay:0});
-        tl.fromTo(salil.current, {duration: 1,x:"700%"},{x:0});
-        tl.fromTo(rajkarnikar.current, {duration: .5,x:"700%"},{x:0});
-        tl.fromTo(dev.current, {y:"700vh"},{duration: .5,y:0});
-        tl.fromTo(based.current, {y:"700vh"},{duration: .3,y:0});
-        tl.fromTo(kathmandu.current, {y:"700vh"},{duration: .2,y:0});
-        tl.fromTo(resume.current, {y:"-700vh"},{duration: .5,y:0});       
-        tl.fromTo(follow.current, {y:"700vh"}, {y:0, duration:1});
+        tl.fromTo(salil.current, {duration: 1,x:"80",opacity: 0},{x:0,opacity:1});
+        tl.fromTo(rajkarnikar.current, {duration: .5,x:"80",opacity: 0},{x:0,opacity:1});
+        tl.fromTo(dev.current, {y:"80",opacity: 0},{duration: .5,y:0,opacity:1});
+        tl.fromTo(based.current, {y:"80",opacity: 0},{duration: .3,y:0,opacity:1});
+        tl.fromTo(kathmandu.current, {y:"80",opacity: 0},{duration: .2,y:0,opacity:1});
+        tl.fromTo(resume.current, {y:"-80",opacity: 0},{duration: .5,y:0,opacity:1});       
+        tl.fromTo(follow.current, {y:"80"}, {y:0, duration:1,opacity:1});
         tl.fromTo(fbicon.current, {opacity:0,y:-10}, {y:0,opacity:1, duration:.5,delay:0});
         tl.fromTo(instaicon.current, {opacity:0,y:-10}, {y:0,opacity:1, duration:.5,delay:.1});
         tl.fromTo(linkedinicon.current,{opacity:0,y:-10}, {y:0,opacity:1, duration:.5,delay:.05});
@@ -74,9 +77,9 @@ const Intro = () => {
     }, [inView])
   return (
     <div  ref={ref} id="intro" className='intro-container'>
-        <div ref={header} className='header-container'>
+        {/* <div ref={header} className='header-container'>
             <h1 className='header'>SALIL RAJKARNIKAR</h1>
-        </div>
+        </div> */}
         <div style={{display:'flex'}}>
             <div className='text-container'>
                 <h1  className='namaste'ref={namaste}>NAMASTE</h1>
@@ -108,35 +111,44 @@ const Intro = () => {
             </div>    
             <div className='follow-container'>
                 <h1 ref={follow} className='follow-text'>FOLLOW ME ON</h1>
-                <div className='follow-icon-container'>
+                <div className='follow-container'>
                     <a ref={fbicon} onMouseLeave={() => setFacebook(true)} onMouseEnter={() => setFacebook(false)} href= "https://www.facebook.com/S.Rajkarnikar11/" >
                         {
                             facebook &&
                             <img style={{opacity:".8"}} className='follow-icon' alt="fb" src={Fbstroke}/>
+
                         }
                         {
-                            !facebook &&
-                            <img className='follow-icon' alt="fb" src={Fbfill}/>
+                            !facebook &&<div>
+                                <img className='qr-icon' alt="fb" src={Fbqr}/>
+                                <img className='follow-icon' alt="fb" src={Fbfill}/>
+                            </div>
                         }
                     </a>
                     <a ref={instaicon} onMouseLeave={() => setInsta(true)} onMouseEnter={() => setInsta(false)} href= "https://www.instagram.com/salilrajkarnikar/" >
                         {
                             insta &&
-                            <img style={{opacity:".8"}} className='follow-icon' alt="fb" src={Instastroke}/>
+                            <img style={{opacity:".8"}} className='follow-icon1' alt="fb" src={Instastroke}/>
                         }
                         {
-                            !insta &&
-                            <img className='follow-icon' alt="fb" src={Instafill}/>
-                        }
+                            !insta &&<div>
+                                    <img className='qr-icon' alt="fb" src={Instaqr}/>
+                                    <img className='follow-icon1' alt="fb" src={Instafill}/>
+                                    
+                                </div>
+                            }
                     </a>
                     <a ref={linkedinicon} onMouseLeave={() => setIn(true)} onMouseEnter={() => setIn(false)} href= "https://www.linkedin.com/in/salil-rajkarnikar-93b649201/" >
                         {
                             linkedin &&
-                            <img style={{opacity:".8"}} className='follow-icon' alt="fb" src={Instroke}/>
+                            <img style={{opacity:".8"}} className='follow-icon2' alt="fb" src={Instroke}/>
                         }
                         {
-                            !linkedin &&
-                            <img className='follow-icon' alt="fb" src={Infill}/>
+                            !linkedin &&<div>
+                                <img className='qr-icon' alt="fb" src={Linkedinqr}/>
+                                <img className='follow-icon2' alt="fb" src={Infill}/>
+                                
+                            </div>
                         }
                     </a>
                 </div>

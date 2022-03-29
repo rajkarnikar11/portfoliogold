@@ -1,0 +1,30 @@
+.skills-container{
+    height: 100Vh;
+    width: 75vw;
+    
+}
+.skills-title{
+    color: #101820FF;
+    font-family: "Noto Sans Display";
+    font-size: 7vw;
+    line-height: 2vw;
+    -webkit-text-stroke: .3px #D4B44A;
+    text-align: left;
+    margin-left: 2vw;
+    opacity: 0;
+    padding-top: 15vh;
+}
+.skill-list{
+    background-color:#D4B44A ;
+    width: 50vw;
+    margin: 2vw;
+    padding: 20px;
+    font-family: "montserrat";
+    font-weight: 600;
+    list-style: none;
+    transform: skewX(-20deg);
+    position: relative;
+    opacity: 0;
+    text-align: center;
+    
+}

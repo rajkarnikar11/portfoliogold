@@ -1,7 +1,7 @@
 .work-container{
     height: 100Vh;
-    padding: 10px;
-    margin-top: 7vh;
+    
+    
     width: 75vw;
     
 }
@@ -14,13 +14,28 @@
     text-align: left;
     margin-left: 2vw;
     opacity: 0;
+    padding-top: 15vh;
+}
+.github-container{
+    font-size: 5vw;
+    opacity: 0;
+    text-transform: uppercase;
+    font-family: 'Noto Sans Display', sans-serif;
+    text-decoration: none;
+    -webkit-text-stroke: 0.3px #D4B44A;
+    color: #101820FF;
+    margin-left: 5vw;
+}  
+.github-link{
+    text-decoration: none;
+    
+    -webkit-text-stroke: .3px #D4B44A;
 }
 
 
 .carousel-container{
+    width: 50vh;
     display: flex;
-    justify-content: space-around;
-    
-    margin-top: 2vh;
+   
     
 }

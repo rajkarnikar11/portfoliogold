@@ -3,7 +3,7 @@ import Arrow from "../assets/arrow.svg"
 import '../Styles/Card.css' ;
 const CardSection = (props: any) => {
   return (
-    <a className='card-continer' href='https://github.com/rajkarnikar11/saltpeter'>
+    <a className='card-continer' href={props.link}>
       <div className='hover-element'>
         <p>visit link</p>  
         <div>
@@ -13,7 +13,7 @@ const CardSection = (props: any) => {
       <div className='card-title'>{props.name}</div>
       <div className='card-image-container'>
         <img className='card-image' src={props.image} alt="proimg"/>
-        {/* image */}
+       
               
       </div>
     </a>

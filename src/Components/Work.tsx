@@ -18,11 +18,18 @@ const Work = () => {
 
   const { ref, inView, entry } = useInView({
     
-    threshold: .7,
+    threshold: .3,
   });
   let tl1 = gsap.timeline()
+  var tl = gsap.timeline({repeat: -2});
+  
 
   const title=useRef(null)
+  const slider1=useRef(null)
+  const slider2=useRef(null)
+  const slider3=useRef(null)
+  const git=useRef(null)
+  const blinker=useRef(null)
 
   useEffect(() => {
     if(inView)  {navigate('/#work')}
@@ -30,6 +37,12 @@ const Work = () => {
      
       tl1.fromTo(title.current,{y:40,duration:2,color:"#D4B44A",opacity:0},{y:40,duration:2,color:"#D4B44A",opacity:1});
       tl1.fromTo(title.current,{y:40,duration:2,color:"#D4B44A"},{y:0,duration:1,color:"#101820FF"});
+      gsap.fromTo(slider1.current,{y:50,duration:1,opacity:0,delay:.5},{opacity:1,y:0,duration:1,delay:.5});
+      gsap.fromTo(slider2.current,{y:-50,duration:1,opacity:0},{opacity:1,y:0,duration:1,delay:.8});
+      gsap.fromTo(slider3.current,{y:50,duration:1,opacity:0},{opacity:1,y:0,duration:1,delay:1});
+      gsap.fromTo(git.current,{y:20,},{y:0,opacity:1,delay:1,duration:1})
+      tl.fromTo(blinker.current,{color:"#101820FF",duration:.5,delay:1},{color:"#D4B44A",duration:1})
+      tl.fromTo(blinker.current,{color:"#101820FF",duration:1},{color:"#101820FF",duration:.5,delay:1})
       setAnimate(false)
     } 
  }, [inView])
@@ -41,9 +54,13 @@ const Work = () => {
       {/* {inView && navigate('/#about')}   */}
       </h1>
       <div className='carousel-container'>
-        <Slider1/>
-        <Slider2/>
-        <Slider3/>
+        <div style={{opacity:0}} ref={slider1}><Slider1  /></div>
+        {/* <div style={{opacity:0}} ref={slider2}><Slider2  /></div>
+        <div style={{opacity:0}} ref={slider3}><Slider3  /></div> */}
+        
+      </div>
+      <div ref={git} className='github-container'>
+        or click <span><a ref={blinker} className='github-link' href='https://github.com/rajkarnikar11'>here</a></span>
       </div>
     </div>
   )

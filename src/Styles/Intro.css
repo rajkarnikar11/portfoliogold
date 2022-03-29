@@ -1,5 +1,6 @@
 .intro-container{
    height: 100vh; 
+   padding-top: 5vh;
 }
 .header-container{
 
@@ -39,6 +40,7 @@
     
     
     
+    
 
 }
 .namaste{
@@ -62,6 +64,7 @@
     transform: rotate(-90deg);
     font-size: 5.8vw;
     margin-left: .5vw;
+    opacity: 0;
     
     
     
@@ -80,6 +83,7 @@
     font-family: 'Stick No Bills', sans-serif;
     padding : 0;
     margin : 0;
+    opacity: 0;
     
     
 }
@@ -89,6 +93,7 @@
     font-family: 'Stick No Bills', sans-serif;
     padding : 0;
     margin : 0;
+    opacity: 0;
    
 }
 .right{
@@ -110,6 +115,7 @@
     line-height: 2vw;
     margin: 0;
     padding: 0;
+    opacity: 0;
 }
 .based{
     font-size: 7.2vw;
@@ -117,6 +123,7 @@
     margin: 0;
     padding: 0;
     font-weight: 10;
+    opacity: 0;
 }
 .kathmandu{
     font-size: 4.1vw;
@@ -124,6 +131,7 @@
     padding: 0;
     font-weight: 900;
     line-height: 4vw;
+    opacity: 0;
 }
 .resume-container{
     background-color: #D4B44A;
@@ -135,7 +143,8 @@
     position: relative;
     height: 5vw;
     cursor: pointer;
-    
+    opacity: 0;
+    text-align: center;
     
 }
 .resume-text1{
@@ -156,13 +165,7 @@
     padding: 0;
     margin: 0;
 }
-.follow-container{
-  
-    margin-left: 2.5vw ;
-    
-    
-    
-}
+
 .follow-text{
     font-family: 'Noto Sans Display', sans-serif;
     font-weight: 900;
@@ -174,19 +177,62 @@
     -webkit-text-stroke: 0.3px rgb(212, 180, 74);
     /* text-orientation: upright; */
     writing-mode: vertical-rl;
+    opacity: 0;
     /* letter-spacing: -1.8vw; */
     
     
     
 }
-.follow-icon-container{
-    margin-left: 4.5vw;
+.follow-container{
+    margin-left: 2.5vw;
+    position: relative;
+    width: 22vw;
+     
+   
+   
   
+}
+.qr-icon{
+    height: 20vw;
+    width: 20vw;
+    object-fit: contain;
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    
 }
 .follow-icon{
     height: 3.8vw;
     margin-top: .6vw;
     margin: 1vw .8vw 0 .8vw;
+    position: absolute;
+    left:2vw;
+    opacity: 0;
+   
+    
+    
+}
+.follow-icon1{
+    height: 3.8vw;
+    margin-top: .6vw;
+    margin: 1vw .8vw 0 .8vw;
+    position: absolute;
+    left: 9vw;
+    transform: translate(-50%,0%);
+    opacity: 0;
+    
+    
+}
+.follow-icon2{
+    height: 3.8vw;
+    margin-top: .6vw;
+    margin: 1vw .8vw 0 .8vw;
+    position: absolute;
+    left: 12vw;
+    opacity: 0;
+    
+    
+    
 }
 /* .downloadlogo-container{
     color: #947613;
