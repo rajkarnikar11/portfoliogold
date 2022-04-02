@@ -9,7 +9,7 @@ const Contact = () => {
   const navigate = useNavigate()
   const { ref, inView, entry } = useInView({
     /* Optional options */
-    threshold: .3,
+    threshold: .2,
   });
 
 
@@ -29,7 +29,7 @@ const Contact = () => {
     if(inView)  {navigate('/#contact')}
  }, [inView])
   return (
-    <div   className='contact-container' id="contact">
+    <div ref={ref}  className='contact-container' id="contact">
       <h1 className='contact-title'>
         leave a message
       </h1>

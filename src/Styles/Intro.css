@@ -133,8 +133,7 @@
     line-height: 4vw;
     opacity: 0;
 }
-.resume-container{
-    background-color: #D4B44A;
+ .resume-container {    
     padding: 0;
     margin: 0;
     margin-left: .5vw;
@@ -142,28 +141,49 @@
     border-radius: 5px;
     position: relative;
     height: 5vw;
-    cursor: pointer;
-    opacity: 0;
+    cursor: pointer;    
     text-align: center;
+    text-decoration: none;
+    background-color: #D4B44A;
+}
+/* .resume-container::before{
+    opacity: 0;
+    position: absolute;
+    top: 110%;
+    content: "";
+    background-color: #D4B44A;
+    height: 5px;
+    width: 80%;
+    left:10%;
+    opacity: .8;
+    transform: perspective(90px) rotateX(50deg);
+    filter: blur(20px);
     
+} */
+
+a {
+    text-decoration: none;  
 }
 .resume-text1{
     color: #131313;
+    
     font-size: 2.1vw;
     line-height: 2vw;
     margin: 0;
     font-weight: 900;
     padding: 0;
+    text-decoration: none;
 }
 .resume-text{
     color: #171717;
-    
+    text-decoration: none;
     font-family: 'Noto Sans Display', sans-serif;
     font-weight: 900;
     font-size: 3.45vw;
     line-height: 3vw;
     padding: 0;
     margin: 0;
+    
 }
 
 .follow-text{
@@ -187,7 +207,7 @@
     margin-left: 2.5vw;
     position: relative;
     width: 22vw;
-     
+    
    
    
   
@@ -208,6 +228,8 @@
     position: absolute;
     left:2vw;
     opacity: 0;
+    background-color: #101820FF;
+    
    
     
     
@@ -220,6 +242,7 @@
     left: 9vw;
     transform: translate(-50%,0%);
     opacity: 0;
+    background-color: #101820FF;
     
     
 }
@@ -230,8 +253,13 @@
     position: absolute;
     left: 12vw;
     opacity: 0;
+    background-color: #101820FF;
     
     
+    
+    
+}
+.follow-icon2:hover{
     
 }
 /* .downloadlogo-container{

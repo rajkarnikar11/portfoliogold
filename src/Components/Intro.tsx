@@ -92,19 +92,19 @@ const Intro = () => {
                             <p ref={dev} className='dev'>A FRONTEND DEVELOPER</p>
                             <p ref={based} className='based'>BASED IN</p>
                             <p ref={kathmandu} className='kathmandu'>KATHMANDU</p>
-                            <div ref={resume} onMouseLeave={() => setMouse(true)} onMouseEnter={() => setMouse(false)} className='resume-container'>
-                                {mouse && <div>
-                                    <p className='resume-text1'>DOWNLOAD</p>
-                                    <p className='resume-text'>RESUME</p>
-                            </div>}
-                                {
-                                    !mouse && <div>
-                                        <MdGetApp color='#131313' size="4.7vw"/>
-                                    </div>
-                                }
-                                
-                                
-                        </div>
+                            <a  href='../assets/resume.pdf' download>
+                                <div ref={resume} onMouseLeave={() => setMouse(true)} onMouseEnter={() => setMouse(false)} className='resume-container'>
+                                    {mouse && <div>
+                                        <p className='resume-text1'>DOWNLOAD</p>
+                                        <p className='resume-text'>RESUME</p>
+                                    </div>}
+                                    {
+                                        !mouse && <div>
+                                            <MdGetApp color='#131313' size="4.7vw"/>
+                                        </div>
+                                    }                            
+                                </div>
+                            </a>
                     </div>
                 </div>
             
@@ -114,39 +114,39 @@ const Intro = () => {
                 <div className='follow-container'>
                     <a ref={fbicon} onMouseLeave={() => setFacebook(true)} onMouseEnter={() => setFacebook(false)} href= "https://www.facebook.com/S.Rajkarnikar11/" >
                         {
-                            facebook &&
-                            <img style={{opacity:".8"}} className='follow-icon' alt="fb" src={Fbstroke}/>
+                            
+                            <img style={{opacity:"1"}} className='follow-icon' alt="fb" src={Fbstroke}/>
 
                         }
                         {
                             !facebook &&<div>
                                 <img className='qr-icon' alt="fb" src={Fbqr}/>
-                                <img className='follow-icon' alt="fb" src={Fbfill}/>
+                                <img style={{opacity:"1"}} className='follow-icon' alt="fb" src={Fbfill}/>
                             </div>
                         }
                     </a>
                     <a ref={instaicon} onMouseLeave={() => setInsta(true)} onMouseEnter={() => setInsta(false)} href= "https://www.instagram.com/salilrajkarnikar/" >
                         {
-                            insta &&
-                            <img style={{opacity:".8"}} className='follow-icon1' alt="fb" src={Instastroke}/>
+                           
+                            <img style={{opacity:"1"}} className='follow-icon1' alt="fb" src={Instastroke}/>
                         }
                         {
                             !insta &&<div>
-                                    <img className='qr-icon' alt="fb" src={Instaqr}/>
-                                    <img className='follow-icon1' alt="fb" src={Instafill}/>
+                                    <img className='qr-icon' alt="insta" src={Instaqr}/>
+                                    <img style={{opacity:"1"}} className='follow-icon1' alt="insta" src={Instafill}/>
                                     
                                 </div>
                             }
                     </a>
                     <a ref={linkedinicon} onMouseLeave={() => setIn(true)} onMouseEnter={() => setIn(false)} href= "https://www.linkedin.com/in/salil-rajkarnikar-93b649201/" >
                         {
-                            linkedin &&
-                            <img style={{opacity:".8"}} className='follow-icon2' alt="fb" src={Instroke}/>
+                            
+                            <img style={{opacity:"1"}} className='follow-icon2' alt="fb" src={Instroke}/>
                         }
                         {
                             !linkedin &&<div>
-                                <img className='qr-icon' alt="fb" src={Linkedinqr}/>
-                                <img className='follow-icon2' alt="fb" src={Infill}/>
+                                <img className='qr-icon' alt="inkedin" src={Linkedinqr}/>
+                                <img style={{opacity:"1"}} className='follow-icon2' alt="inkedin" src={Infill}/>
                                 
                             </div>
                         }

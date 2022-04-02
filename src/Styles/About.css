@@ -29,6 +29,7 @@
     border-bottom: 20px solid #131313;
     box-shadow: rgb(212, 180, 74,.7) .5vw .5vw; */
     color: #101820FF;
+    /* border: 1px solid #101820FF; */
     font-size: 2.2vw;
     display: inline;
     text-align: right;
@@ -38,6 +39,22 @@
     line-height: 5vw;
     font-family: 'Ubuntu Mono', monospace;
     opacity: 0;
+    box-shadow: #101820FF 2px 2px 5px,
+         #D4B44A 0 0 30px;
+    
+}
+.about-text:before,.about-text1:before,.about-text2:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: #D4B44A;
+    height: 70%;
+    top: 50%;
+    transform: perspective(200px) rotateX(50deg);
+    filter: blur(30px);
+    z-index: -1;
+    opacity: .3;
+    
 }
 .Typewriter{
     color: aliceblue;
@@ -54,6 +71,8 @@
     background-color: #D4B44A;
     line-height: 5vw;
     font-family: 'Ubuntu Mono', monospace;
+    box-shadow: #101820FF 2px 2px 5px,
+         #D4B44A 0 0 30px;
     
 
     
@@ -70,6 +89,8 @@
     background-color: #D4B44A;
     line-height: 5vw;
     font-family: 'Ubuntu Mono', monospace;
+    box-shadow: #101820FF 2px 2px 5px,
+         #D4B44A 0 0 30px;
     
 }
 .about-text-container{
