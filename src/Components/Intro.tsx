@@ -92,7 +92,7 @@ const Intro = () => {
                             <p ref={dev} className='dev'>A FRONTEND DEVELOPER</p>
                             <p ref={based} className='based'>BASED IN</p>
                             <p ref={kathmandu} className='kathmandu'>KATHMANDU</p>
-                            <a  href='../assets/resume.pdf' download>
+                            <a  href='/resume.pdf' download>
                                 <div ref={resume} onMouseLeave={() => setMouse(true)} onMouseEnter={() => setMouse(false)} className='resume-container'>
                                     {mouse && <div>
                                         <p className='resume-text1'>DOWNLOAD</p>
