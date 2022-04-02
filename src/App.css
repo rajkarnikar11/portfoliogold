@@ -8,6 +8,37 @@
   text-transform: uppercase;
   letter-spacing: 10px;
   
+  width: 30vw;
+  margin: auto;
+  
+}
+.name:before{
+  content: "";
+    position: absolute;    
+    width: 100%;
+    margin-left: -2.5%;
+    background-color: #D4B44A;
+    height: 5px;
+    top: 100%;
+    transform: perspective(500px) rotateX(50deg);
+    filter: blur(0px);
+    z-index: -1;
+    opacity: 1;
+}.name:after{
+  content: "";
+    position: absolute;    
+    width: 100%;
+    margin-left: 0%;
+    background-color: #D4B44A;
+    height: 5px;
+    top: 120%;
+    transform: perspective(500px) rotateX(50deg);
+    filter: blur(10px);
+    border-color: #000 transparent transparent transparent;
+    border-radius: 50%/100px 100px 0 0;
+    z-index: -2;
+    opacity: .8;
+    left: 0;
 }
 .firstname{
   font-weight: 600;
@@ -15,6 +46,6 @@
 }
 .lastname{
   font-weight: 200;
-  -webkit-text-stroke: .3px #D4B44A;
+  color: rgb(212, 180, 74);
 
 }

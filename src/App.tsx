@@ -19,8 +19,9 @@ function App() {
           <h1 className='name'><span className='firstname'>salil</span>     <span className='lastname'>rajkarnikar</span> </h1>
           <Work/>
           <Skills/>
-          <Contact/>
         </div>
+          <Contact/>
+        
 
       </div>
     </BrowserRouter>

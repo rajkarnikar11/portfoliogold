@@ -40,10 +40,10 @@
     font-family: 'Ubuntu Mono', monospace;
     opacity: 0;
     box-shadow: #101820FF 2px 2px 5px,
-         #D4B44A 0 0 30px;
+         rgb(212, 180, 74,.5) 0 0 30px;
     
 }
-.about-text:before,.about-text1:before,.about-text2:before{
+/* .about-text:before,.about-text1:before,.about-text2:before{
     content: "";
     position: absolute;
     width: 100%;
@@ -55,7 +55,7 @@
     z-index: -1;
     opacity: .3;
     
-}
+} */
 .Typewriter{
     color: aliceblue;
 }
@@ -72,7 +72,7 @@
     line-height: 5vw;
     font-family: 'Ubuntu Mono', monospace;
     box-shadow: #101820FF 2px 2px 5px,
-         #D4B44A 0 0 30px;
+    rgb(212, 180, 74,.5) 0 0 30px;
     
 
     
@@ -90,7 +90,7 @@
     line-height: 5vw;
     font-family: 'Ubuntu Mono', monospace;
     box-shadow: #101820FF 2px 2px 5px,
-         #D4B44A 0 0 30px;
+    rgb(212, 180, 74,.5) 0 0 30px;
     
 }
 .about-text-container{
@@ -105,7 +105,7 @@
     font-family: "Noto Sans Display";
     font-size: 7vw;
     line-height: 2vw;
-    -webkit-text-stroke: .3px #D4B44A;
+    -webkit-text-stroke: 1px #D4B44A;
     text-align: left;
     margin-left: 2vw;
     opacity: 0;
@@ -129,7 +129,7 @@
     font-family: "Noto Sans Display";
     font-size: 6.9vw;
     line-height: 5vw;
-    -webkit-text-stroke: .3px #D4B44A;
+    -webkit-text-stroke: 1px #D4B44A;
     text-align: left;
     z-index: -3;
     opacity: 0;

@@ -10,7 +10,7 @@
     font-family: "Noto Sans Display";
     font-size: 7vw;
     line-height: 2vw;
-    -webkit-text-stroke: .3px #D4B44A;
+    -webkit-text-stroke: 1px #D4B44A;
     text-align: left;
     margin-left: 2vw;
     opacity: 0;
@@ -22,14 +22,14 @@
     text-transform: uppercase;
     font-family: 'Noto Sans Display', sans-serif;
     text-decoration: none;
-    -webkit-text-stroke: 0.3px #D4B44A;
+    -webkit-text-stroke: 1px #D4B44A;
     color: #101820FF;
     margin-left: 5vw;
 }  
 .github-link{
     text-decoration: none;
     
-    -webkit-text-stroke: .3px #D4B44A;
+    -webkit-text-stroke: 1px #D4B44A;
 }
 
 

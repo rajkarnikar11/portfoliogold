@@ -49,7 +49,7 @@
     line-height: 0vw;
     font-size: 8.3vw;
     color: rgb(0, 0, 0,0);
-    -webkit-text-stroke: 0.3px #D4B44A;
+    -webkit-text-stroke: 1px #D4B44A;
     position:absolute;
     left: 15vw;
     z-index: -1;
@@ -194,7 +194,7 @@ a {
     margin-left: 7vw;
     margin-top: .9vw;
     color: rgb(0, 0, 0,0);
-    -webkit-text-stroke: 0.3px rgb(212, 180, 74);
+    -webkit-text-stroke: 1px rgb(212, 180, 74);
     /* text-orientation: upright; */
     writing-mode: vertical-rl;
     opacity: 0;
