@@ -1,9 +1,6 @@
 .work-container{
-    height: 100Vh;
-    
-    
-    width: 75vw;
-    
+    height: 100Vh;  
+    width: 75vw;    
 }
 .work-title{
     color: #101820FF;
@@ -31,11 +28,55 @@
     
     -webkit-text-stroke: 1px #D4B44A;
 }
+.slider-big{
+    
+}
+.slider-small{
+    display: none;
+}
 
 
 .carousel-container{
-    width: 50vh;
+    width: 50vw;
     display: flex;
+    
    
     
+}
+@media screen and (max-width: 750px) {
+    .slider-big{
+        display: none;
+    }
+    .slider-small{
+        display: block;
+    }
+    .work-container{
+        width: 100vw;
+        
+    }
+    .work-title{
+        color: #101820FF;
+        font-family: "Noto Sans Display";
+        font-size: 12vw;
+        line-height: 2vw;
+        -webkit-text-stroke: 1px #D4B44A;
+        text-align: left;
+        margin-left: 2vw;
+        opacity: 0;
+        padding-top: 15vh;
+        margin-bottom: 10vh;
+    }
+    .carousel-container{
+        width: 80vw;
+        
+        display: flex;        
+        align-items: center;
+        justify-content: center;
+        margin: auto;      
+    }
+    .github-container{
+        font-size: 10vw;
+        margin-top: 5vh;
+       
+    }  
 }

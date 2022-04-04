@@ -15,15 +15,14 @@ const Slider2 = () => {
   var settings = {
     dots: false,
     infinite: true,
-    speed: 2000,
+    // lazyLoad: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplaySpeed: 3500,
-    pauseOnHover: true,
-    vertical: true,
-    verticalSwiping: true,
     autoplay: true,
-    rtl: false,
+    speed: 4000,
+    autoplaySpeed:4000,
+    cssEase: "linear",
+    pauseOnHover: true,
     arrows:false
   };
   return (

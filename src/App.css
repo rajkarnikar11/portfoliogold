@@ -7,12 +7,14 @@
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   letter-spacing: 10px;
-  
-  width: 30vw;
+  text-align: center;
+  width: 50vw;
   margin: auto;
+  display: flex;
+  justify-content: center;
   
 }
-.name:before{
+/* .name:before{
   content: "";
     position: absolute;    
     width: 100%;
@@ -39,7 +41,7 @@
     z-index: -2;
     opacity: .8;
     left: 0;
-}
+} */
 .firstname{
   font-weight: 600;
   color: rgb(212, 180, 74);
@@ -48,4 +50,21 @@
   font-weight: 200;
   color: rgb(212, 180, 74);
 
+}
+@media screen and (max-width: 700px) {
+  .name{
+    
+    top: 1.5vh;
+    z-index: 1;
+    font-size: 4vw;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+  }
 }

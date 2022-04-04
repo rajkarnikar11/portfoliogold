@@ -21,3 +21,18 @@
    
        
 }
+@media screen and (max-width: 750px) {
+    .container-card{
+        height: 35vh;
+        margin: auto;
+        width: 80vw !important;
+        position: relative;
+       
+           
+    }
+    .carousel{
+        width: 90vw;
+        margin: 2vw;     
+    }
+    
+}

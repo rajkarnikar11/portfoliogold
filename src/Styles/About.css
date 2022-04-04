@@ -6,6 +6,7 @@
     position: absolute;
     top:0;
     z-index: -1;
+    width: 30vw;
     
 }
 .pro-container{
@@ -114,9 +115,7 @@
     
 
 }
-.about-title:hover{
 
-}
 .about-container{
     height: 100Vh;
     padding: 10px;
@@ -139,4 +138,73 @@
     width: 70vw;
     margin: 2vw;
     position: relative;
+}
+@media screen and (max-width: 700px) {
+    .about-text-container{
+    
+        height: 100vh;
+       
+        padding: 0 1vw;
+        font-size: 7vw;
+    } 
+    .about-body{
+    
+        width: 100vw;position: relative;
+    }
+    .about-name{
+       
+        font-size: 9vw;
+        line-height: 5vw;
+        
+    }
+    .about-title{
+       
+        font-size: 9vw;
+        line-height: 2vw;   
+    }
+    .about-text2{        
+        font-size: 2.81vw;        
+        
+        right:10%;
+        top: 50vh;
+       
+        line-height: 5vh;      
+    }
+    .about-text1{
+    
+        font-size: 2.81vw;
+        
+        top: 42vh;
+        right: 10%;
+      
+        line-height: 5vh;
+        
+        
+    }
+    .about-text{
+        position: absolute;
+        
+        font-size: 2.81vw;
+        
+        right:10%;
+        top: 34.5vh;
+      
+        line-height: 5vh;
+        
+    }
+    .pro{        
+        width: 60vw;        
+    }
+    .linear-gradient{
+        
+        width: 60vw;
+        
+    }
+    .about-container{
+        
+        padding: 10px;
+        padding-top: 12vh;
+        
+        
+    }
 }

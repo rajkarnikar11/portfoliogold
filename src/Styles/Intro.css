@@ -120,14 +120,16 @@
 .based{
     font-size: 7.2vw;
     line-height: 5vw;
-    margin: 0;
+    margin:0 0 0 -.5vw;
     padding: 0;
     font-weight: 10;
     opacity: 0;
+    text-align: left;
+    
 }
 .kathmandu{
     font-size: 4.1vw;
-    margin: 0;
+    margin: 0 0 0 -.1vw;
     padding: 0;
     font-weight: 900;
     line-height: 4vw;
@@ -135,9 +137,9 @@
 }
  .resume-container {    
     padding: 0;
-    margin: 0;
-    margin-left: .5vw;
-    margin-right: .5vw;
+    margin: 0 0 0 -.1vw ;
+    /* margin-left: .5vw;
+    margin-right: .5vw; */ 
     border-radius: 5px;
     position: relative;
     height: 5vw;
@@ -262,14 +264,20 @@ a {
 .follow-icon2:hover{
     
 }
-/* .downloadlogo-container{
-    color: #947613;
-    position: absolute;
-    top:-75%;
-    left: 50%;
-    transform: translate(-50%,50%);
-    z-index: -1;
+.follow-container-out{
+    margin-left: 2.5vw;
 }
-.downloadlogo{
+
+@media screen and (max-width: 700px) {
+    .text-container{
+       
+        transform: scale(1.5);
+        margin-top: 30vh;    
+    }  
+    .follow-container-out{
+        margin-left: 18vw;
+        transform: scale(1.5);
+        margin-top: 31.3vh;
     
-} */
+    }
+}

@@ -54,7 +54,8 @@ const Work = () => {
       {/* {inView && navigate('/#about')}   */}
       </h1>
       <div className='carousel-container'>
-        <div style={{opacity:0}} ref={slider1}><Slider1  /></div>
+        <div className='slider-big'  ref={slider1}><Slider1  /></div>
+        <div  className='slider-small'  ref={slider2}><Slider2  /></div>
         {/* <div style={{opacity:0}} ref={slider2}><Slider2  /></div>
         <div style={{opacity:0}} ref={slider3}><Slider3  /></div> */}
         

@@ -109,7 +109,7 @@ const Intro = () => {
                 </div>
             
             </div>    
-            <div className='follow-container'>
+            <div className='follow-container-out'>
                 <h1 ref={follow} className='follow-text'>FOLLOW ME ON</h1>
                 <div className='follow-container'>
                     <a ref={fbicon} onMouseLeave={() => setFacebook(true)} onMouseEnter={() => setFacebook(false)} href= "https://www.facebook.com/S.Rajkarnikar11/" >
