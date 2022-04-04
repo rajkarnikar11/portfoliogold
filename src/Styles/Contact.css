@@ -120,3 +120,31 @@
     transition-delay: .1;
     transition-timing-function: linear;
 }
+@media screen and (max-width: 700px){
+    .form-line-container{
+         width: 80vw;       
+        padding:0 0 1vw 1vw;
+        font-size: 5vw;
+        color:  #D4B44A;  
+        margin-top: 2vh;    
+        
+    }
+    .form-submit{
+       
+        font-size: 5vw;
+        font-weight: 700;
+        letter-spacing: 7px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .contact-title{
+       line-height: 5vw;
+       font-size: 8vw;
+        padding-top: 12vh;
+    }
+    .form-cotainer{
+        margin-top: 10vh;
+        
+        
+    }
+}

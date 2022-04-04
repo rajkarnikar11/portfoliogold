@@ -28,3 +28,25 @@
     text-align: center;
     
 }
+@media screen and (max-width: 700px){
+    .skill-list{
+        width: 70vw;
+        margin: 2vw auto;
+    }  
+    .skills-title{
+        color: #101820FF;
+        font-family: "Noto Sans Display";
+        font-size: 8vw;
+        line-height: 8vw;
+        -webkit-text-stroke: 1px #D4B44A;
+        text-align: left;
+        margin-left: 2vw;
+        opacity: 0;
+        padding-top: 18vh;
+    } 
+    .skills-container{
+       
+        width: 100vw;
+        
+    }
+}

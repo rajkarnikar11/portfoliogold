@@ -112,7 +112,7 @@ const Intro = () => {
             <div className='follow-container-out'>
                 <h1 ref={follow} className='follow-text'>FOLLOW ME ON</h1>
                 <div className='follow-container'>
-                    <a ref={fbicon} onMouseLeave={() => setFacebook(true)} onMouseEnter={() => setFacebook(false)} href= "https://www.facebook.com/S.Rajkarnikar11/" >
+                    <a ref={fbicon} target={"_blank"} onMouseLeave={() => setFacebook(true)} onMouseEnter={() => setFacebook(false)} href= "https://www.facebook.com/S.Rajkarnikar11/" >
                         {
                             
                             <img style={{opacity:"1"}} className='follow-icon' alt="fb" src={Fbstroke}/>
@@ -125,7 +125,7 @@ const Intro = () => {
                             </div>
                         }
                     </a>
-                    <a ref={instaicon} onMouseLeave={() => setInsta(true)} onMouseEnter={() => setInsta(false)} href= "https://www.instagram.com/salilrajkarnikar/" >
+                    <a ref={instaicon} target={"_blank"} onMouseLeave={() => setInsta(true)} onMouseEnter={() => setInsta(false)} href= "https://www.instagram.com/salilrajkarnikar/" >
                         {
                            
                             <img style={{opacity:"1"}} className='follow-icon1' alt="fb" src={Instastroke}/>
@@ -138,7 +138,7 @@ const Intro = () => {
                                 </div>
                             }
                     </a>
-                    <a ref={linkedinicon} onMouseLeave={() => setIn(true)} onMouseEnter={() => setIn(false)} href= "https://www.linkedin.com/in/salil-rajkarnikar-93b649201/" >
+                    <a ref={linkedinicon} target={"_blank"} onMouseLeave={() => setIn(true)} onMouseEnter={() => setIn(false)} href= "https://www.linkedin.com/in/salil-rajkarnikar-93b649201/" >
                         {
                             
                             <img style={{opacity:"1"}} className='follow-icon2' alt="fb" src={Instroke}/>

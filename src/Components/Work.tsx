@@ -61,7 +61,7 @@ const Work = () => {
         
       </div>
       <div ref={git} className='github-container'>
-        or click <span><a ref={blinker} className='github-link' href='https://github.com/rajkarnikar11'>here</a></span>
+        or click <span><a ref={blinker} target={"_blank"} className='github-link' href='https://github.com/rajkarnikar11'>here</a></span>
       </div>
     </div>
   )
