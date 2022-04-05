@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
 import '../Styles/Contact.css' ;
 import emailjs from 'emailjs-com';
+import Phone from "../assets/phone.svg"
 const Contact = () => {
   
 
@@ -72,7 +73,14 @@ const Contact = () => {
               <input type="submit" className='form-submit' value="Send"></input>
             </div>
         </form>
-
+        <div className='call-container'>
+          <a href="tel:+977-9860831576">
+            <img  className='call-icon' alt="phone" src={Phone}/>  
+          </a>
+          <div className='number'>
+            +977-9841038513
+          </div>
+        </div>
       </div>
     </div>
   )

@@ -45,10 +45,10 @@ const Skills = () => {
       </h1>
       <div className='skills-list-container'>
         <li ref={html} className='skill-list'>HTML , CSS</li>
-        <li ref={react} className='skill-list'>REACT JS , NEXT JS</li>
+        <li ref={react} className='skill-list'>REACT JS , NEXT JS, REACTNATIVE</li>
         <li ref={redux} className='skill-list'>REDUX</li>
         <li ref={type} className='skill-list'>TYPESCRIPT</li>
-        <li ref={native} className='skill-list'>REACTNATIVE</li>
+        <li ref={native} className='skill-list'>Illustrator  ,Figma  ,Photoshop</li>
       </div> 
     </div>
   )
