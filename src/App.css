@@ -1,5 +1,10 @@
 .App{
   height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+.section-margin{
+  scroll-snap-align: start;
 }
 .name{
   text-align: center;

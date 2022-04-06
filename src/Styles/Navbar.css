@@ -7,39 +7,105 @@
     transform: translateY(-50%);
 }
 .items{
+    
     list-style: none;
     text-decoration: none;
     color: rgb(19, 19, 19,0);
+    position: relative;
     font-size: 3vw;
     text-align: right;
     line-height: 4vw;
-    margin: 5px 0px 5px 0;
+    margin: 2vh 0px ;
     font-family: "Noto Sans Display";
     font-weight: 700;
     -webkit-text-stroke: 1px #D4B44A;
     text-transform: uppercase;
+    width: max-content
+}
+.items:after{
+    
+    position: absolute;
+    top: 110%;
+    opacity: 0;
+    left: 0;
+    height: 7%;
+    width: 100%;
+    content: " ";
+    background-color: #D4B44A;
+    z-index: -1;
+    filter: blur(6px);
+    transform: perspective(7px) rotateX(10deg);
+    transition-duration: .3s;
+    
+    transition-timing-function: linear;
+}
+.items:hover:after{
+    opacity: .2;
 }
 .items:hover{
     color: #D4B44A;
     transition-duration: .3s;
-    font-family: "Stick No Bills";
+    
     transition-timing-function: linear;
-    font-size: 4vw;
-    line-height: 4vw;
+    
     
 }
 .active-items{
     list-style: none;
     text-decoration: none;
+    text-shadow: black 0 0 5px,
+                black 0 0 7px,
+                black 0 0 10px;
+    /* text-shadow: rgb(0, 0, 0,.5) 2px 2px 5px,
+                 rgb(0, 0, 0,.5) 5px 5px 10px,
+                 rgb(0, 0, 0,.5) 7px 7px 12px,
+                 rgb(0, 0, 0,.5) -2px -2px 5px,
+                 rgb(0, 0, 0,.5) -5px -5px 10px,
+                 rgb(0, 0, 0,.5) -7px -7px 12px,
+                 rgb(0, 0, 0,.5) 0 0 20px,
+                 rgb(212, 180, 74,1) 0 0 5px,
+                 rgb(212, 180, 74,.5) 0 0 30px ; */
+
     color: #D4B44A;
-    font-size: 5vw;
+    font-size: 3vw;
     text-align: right;
-    margin: 5px 0px 5px 0;
-    font-family: "Stick No Bills";
+    margin: 2vh 0px ;
+    
+    font-family: "Noto Sans Display";
+    -webkit-text-stroke: 2px rgb(16, 24, 32,.8);
     font-weight: 900;
     line-height: 4vw; 
-    text-transform: uppercase;  
+    text-transform: uppercase; 
+    position: relative; 
+    width: max-content;
    
+}
+.active-items:after{
+    position: absolute;
+    top: 90%;
+    opacity: 0.8;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    content: " ";
+    background-color: rgb(212, 180, 74,.8);
+    z-index: -1;
+    filter: blur(7px);
+    transform: perspective(10px) rotateX(7deg);
+}
+.active-items:before{
+    position: absolute;
+    top: 50%;
+    opacity: 0.8;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 60%;
+    width: 60%;
+    content: " ";
+    background-color: rgb(212, 180, 74,.8);
+    z-index: -1;
+    filter: blur(35px);
+    
 }
 .nav-container-float{
     display: none;
@@ -52,8 +118,8 @@
         position: fixed;
         display: flex;
         align-items: center;
-        bottom: 0%;
-        padding: 5px 0;
+        bottom: 0vh;
+        padding: 5px 5px;
         background-color: #101820FF;
         justify-content: space-around;
         
@@ -90,19 +156,20 @@
         
     }
     .active-float{
-        background-color: rgb(212, 180, 74,.8);
+        /* background-color: rgb(212, 180, 74,.8); */
         color: black;
         font-weight: bold;
-        text-shadow: black 0 0 1px;
-        padding: 0px 15px;
-        box-shadow: inset black 0 0 10px;
+        /* text-shadow: black 0 0 1px; */
+        padding: 5px 10px;
+        /* box-shadow: inset black 0 0 10px; */
         border-radius: 50px;
         position: relative;
-        height: 100%;
+        height: 80%;
         display: flex;
         place-items: center;
         cursor: pointer;
         font-size: 3vw;
+        margin:auto 0px;
        
     }
     .active-float:before{
@@ -116,6 +183,27 @@
         transform: translate(-50%,-50%);
         z-index: -1;
         border-radius: 50px;
-        filter: blur(10px);
+        filter: blur(5px);
     }
+    .active-float:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(212, 180, 74,.5);
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -1;
+        border-radius: 50px;
+        filter: blur(20px);
+    }
+    .nav-icon{
+        filter: drop-shadow(0px 5px 5px rgb(0 0 0 / 1));
+    }
+    /* .nav-icon{
+        box-shadow: white 0 0 10px;
+        border-radius: 50px;
+        background-color: rgb(212, 180, 74,0);
+    } */
 }
