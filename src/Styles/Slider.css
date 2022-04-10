@@ -12,10 +12,10 @@
 }
 .container-card{
     margin:10px 0px ;
-    background-color:  rgb(212, 180, 74,.6) ;
+    
     height: 40vh;
     float: left;
-   
+    
     width: 23vw !important;
     position: relative;
    
