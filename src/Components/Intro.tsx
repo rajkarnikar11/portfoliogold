@@ -93,15 +93,17 @@ const Intro = () => {
                             <p ref={based} className='based'>BASED IN</p>
                             <p ref={kathmandu} className='kathmandu'>KATHMANDU</p>
                             <a  href='/resume.pdf' download>
-                                <div ref={resume} onMouseLeave={() => setMouse(true)} onMouseEnter={() => setMouse(false)} className='resume-container'>
-                                    
-                                        <p className='resume-text1'>DOWNLOAD</p>
-                                        <p className='resume-text'>RESUME</p>
-                                    
-                                        <MdGetApp className='dowmload-icon' color='#131313' size="4.7vw"/>
-                                       
-                                                             
-                                </div>
+                                <div ref={resume} className='resume'>        
+                                    <div className='resume-content'>
+                                        <div className='front'>
+                                            <p className='resume-text1'>DOWNLOAD</p>
+                                            <p className='resume-text'>RESUME</p>                                                                                
+                                        </div>
+                                        <div className='back'>
+                                            <MdGetApp className='dowmload-icon' color='#131313' size="4.7vw"/>
+                                        </div>                                    
+                                    </div>                       
+                            </div>
                             </a>
                     </div>
                 </div>
